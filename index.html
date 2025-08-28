@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Μαθηματικά Γ Λυκείου - Ουντζούδης Δημήτρης</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Μαθηματικά Γ Λυκείου - Ουντζούδης Δημήτρης</title>
+
+  <!-- Σύνδεση με CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Manifest για PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Χρώματα για Android/Chrome -->
+  <meta name="theme-color" content="#4CAF50">
+
+  <!-- Εικονίδια εφαρμογής -->
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <!-- MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 <div class="container">
@@ -59,6 +73,18 @@
     </div>
 </div>
 
+<!-- Σύνδεση με το main script -->
 <script src="script.js"></script>
+
+<!-- Εγγραφή Service Worker -->
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service-worker.js")
+    .then(reg => console.log("Service Worker registered:", reg.scope))
+    .catch(err => console.error("Service Worker error:", err));
+}
+</script>
+
+
 </body>
 </html>
