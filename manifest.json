@@ -3,7 +3,7 @@
   "short_name": "Μαθηματικά",
   "id": "/math-quiz/",
   "description": "Εφαρμογή Quiz Μαθηματικών για Γ Λυκείου. Με επιλογές: Συναρτήσεις, Όρια, Συνέχεια, Παράγωγος, Ολοκληρώματα.",
-  "start_url": ".",
+  "start_url": "/math-quiz/",
   "scope": "/math-quiz/",
   "display": "standalone",
   "background_color": "#ffffff",
