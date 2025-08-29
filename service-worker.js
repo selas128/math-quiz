@@ -5,8 +5,8 @@ const urlsToCache = [
   "./style.css",
   "./script.js",
   "./manifest.json",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png"
+  "./icons/icon-192x192.png",
+  "./icons/icon-512x512.png"
 ];
 
 // Εγκατάσταση service worker
@@ -68,3 +68,4 @@ self.addEventListener("fetch", event => {
     caches.match(request).then(response => response || fetch(request))
   );
 });
+
