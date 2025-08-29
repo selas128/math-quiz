@@ -1,4 +1,4 @@
-const CACHE_NAME = "math-quiz-cache-v2";
+const CACHE_NAME = "math-quiz-cache-v3";
 const urlsToCache = [
   "./",
   "./index.html",
@@ -68,4 +68,5 @@ self.addEventListener("fetch", event => {
     caches.match(request).then(response => response || fetch(request))
   );
 });
+
 
