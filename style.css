@@ -10,7 +10,14 @@ body {
     justify-content:center; 
     align-items:center; 
 }
-
+.author {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+}
 .container { 
     width:100%; 
     max-width:800px; 
@@ -87,10 +94,18 @@ h1 { font-size:1.8rem; margin-bottom:5px; text-shadow:1px 1px 3px rgba(0,0,0,0.3
 @media (max-width:600px){
     .container{border-radius:15px;}
     h1{font-size:1.4rem;}
-    .subtitle{font-size:1rem;}
+    
+    .subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2E7D32;
+    text-align: center;
+    margin-bottom: 0; /* Μειώνει το κενό από κάτω */
+    }
     .menu-btn{font-size:1rem; padding:15px;}
     .question{font-size:1.1rem;}
     .true-false-btn{padding:15px 30px; font-size:1.1rem;}
     #categoryTitle { font-size:1.2rem; }
 }
+
 
