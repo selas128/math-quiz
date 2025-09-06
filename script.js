@@ -81,8 +81,50 @@ const quizData = {
         multipleChoice: [
             { question: "Το όριο lim x→0 (sin x)/x είναι;", options:["0","1","∞","-1"], answer:1 }
         ],
-        trueFalse: [
-            { question: "Το όριο lim x→∞ 1/x = 0.", answer:true }
+        trueFalse: [        
+ {"question": "Για κάθε συνάρτηση ισχύει ότι, το όριο της \\( f \\) στο \\( x_0 \\) ισούται με την τιμή της \\( f \\) στο \\( x_0 \\)","answer": false},
+{"question": "Ισχύει ότι: \\( |ημ x| \\leq |x| \\) για κάθε \\( x \\in \\mathbb{R} \\)","answer": true},
+{"question": "Ισχύει ότι: \\( |ημx| \\leq x \\) για κάθε \\( x \\in \\mathbb{R} \\)","answer": false},
+{"question": "Ισχύει: \\( \\lim\\limits_{x \\to 0} \\frac{1 - συνx}{x} = 0 \\)","answer": true},
+{"question": "Ισχύει: \\( \\lim\\limits_{x \\to 0} \\frac{ημx}{x} = 1 \\)","answer": true},
+{"question": "Ισχύει: \\( \\lim\\limits_{x \\to 0} \\frac{συνx - 1}{x} = 1 \\)","answer": false},
+{"question": "Ισχύει: \\( \\lim\\limits_{x \\to 0} \\frac{1}{x^{2\\nu + 1}} = +\\infty \\) για κάθε \\( \\nu \\in \\mathbb{N} \\)","answer": false},
+{"question": "Αν \\( \\lim\\limits_{x \\to x_0} f(x) = -\\infty \\), τότε \\( f(x) > 0 \\) κοντά στο \\( x_0 \\)","answer": false},
+{"question": "Αν \\( \\lim\\limits_{x \\to x_0} f(x) = +\\infty \\), τότε \\( \\lim\\limits_{x \\to x_0} (-f(x)) = -\\infty \\)","answer": true},
+{"question": "Για κάθε ζεύγος συναρτήσεων \\( f: R \\to R \\) και \\( g: R \\to R \\), αν \\( \\lim\\limits_{x \\to x_0} f(x) = 0 \\) και \\( \\lim\\limits_{x \\to x_0} g(x) = +\\infty \\), τότε \\( \\lim\\limits_{x \\to x_0} (f(x) \\cdot g(x)) = 0 .\\)","answer": false},
+{"question": "Αν υπάρχει το όριο της συνάρτησης \\( f \\) στο \\( x_0 \\) και \\( \\lim\\limits_{x \\to x_0} |f(x)| = 0 \\), τότε \\( \\lim\\limits_{x \\to x_0} f(x) = 0 \\)","answer": true},
+{"question": "Αν \\( f(x) = \\ln(x^5 + x + 1) \\), τότε το όριο \\( \\lim\\limits_{x \\to 0} f(x) \\) είναι καλώς ορισμένο","answer": true},
+{"question": "Αν \\( f(x) = \\sqrt{x^5 + x - 2} \\), τότε το όριο \\( \\lim\\limits_{x \\to 0} f(x) \\) είναι καλώς ορισμένο","answer": false},
+{"question": "Έστω συνάρτηση \\( f \\) ορισμένη στο \\( (a, x_0) \\cup (x_0, b) \\) και \\( \\ell \\) ένας πραγματικός αριθμός. Τότε ισχύει η ισοδυναμία: \\[ \\lim_{x \\to x_0} f(x) = \\ell \\iff \\lim_{x \\to x_0} (f(x) - \\ell) = 0 \\]","answer": true},
+{"question": "Ισχύει ότι: \\( \\lim\\limits_{x \\to -\\infty} e^{x} = 0 \\)","answer": true},
+{ "question": "Ισχύει ότι: \\( \\lim\\limits_{x \\to 0} \\ln(x) = +\\infty \\)", "answer": false},
+{"question": "Αν \\( \\kappa \\) θετικός ακέραιος, τότε \\( \\lim\\limits_{x \\to 0} \\frac{1}{x^{2\\kappa}} = +\\infty \\)","answer": true},
+{"question": "Αν \\( \\kappa \\) θετικός ακέραιος, τότε \\( \\lim\\limits_{x \\to 0^{-}} \\frac{1}{x^{2\\kappa + 1}} = -\\infty \\)","answer": true},
+{"question": "Ισχύει \\( \\lim\\limits_{x \\to +\\infty} \\frac{\\sin x}{x} = 1 \\)","answer": false},
+{"question": "Αν \\( 0 < \\alpha < 1 \\), τότε \\( \\lim\\limits_{x \\to +\\infty} \\alpha^{x} = +\\infty \\)","answer": false},
+{"question": "Αν \\( \\lim\\limits_{x \\to x_0} f(x) = +\\infty \\) και \\( \\lim\\limits_{x \\to x_0} (\\alpha \\cdot f(x)) = -\\infty \\), τότε \\( \\alpha < 0 \\)","answer": true},
+{"question": "Αν \\( \\lim\\limits_{x \\to x_0} |f(x)| = +\\infty \\), τότε \\( \\lim\\limits_{x \\to x_0} f(x) = +\\infty \\) ή \\( \\lim\\limits_{x \\to x_0} f(x) = -\\infty \\)","answer": false},
+{ "question": "Αν \\( \\lim\\limits_{x \\to +\\infty} f(x) = -\\infty \\), τότε \\( \\lim\\limits_{x \\to +\\infty} \\frac{1}{f(x)} = 0 \\)","answer": true},
+{"question": "Έστω οι συναρτήσεις \\( f, g, h \\) για τις οποίες ισχύει \\( h(x) \\leq f(x) \\leq g(x) \\) κοντά στο \\( x_0 \\) και \\( \\lim\\limits_{x \\to x_0} h(x) \\neq \\lim\\limits_{x \\to x_0} g(x) = \\ell \\). Τότε δεν υπάρχει το \\( \\lim\\limits_{x \\to x_0} f(x) = \\ell \\).", "answer": false},
+{"question": "Έστω οι συναρτήσεις \\( f, g, h \\) για τις οποίες ισχύει \\( h(x) \\leq f(x) \\leq g(x) \\) κοντά στο \\( x_0 \\) και \\( \\lim\\limits_{x \\to x_0} h(x) = \\lim\\limits_{x \\to x_0} g(x) = \\ell \\). Τότε \\( \\lim\\limits_{x \\to x_0} f(x) = \\ell \\).","answer": true},
+{"question": "Έστω η συνάρτηση \\( f: R \\to R \\) για την οποία ισχύει ότι: \\( 0 \\leq f(x) \\leq 1 \\) για κάθε \\( x \\in R \\). Τότε ισχύει: \\[ \\lim\\limits_{x \\to 0} (x^2 \\cdot f(x)) = 0 \\]","answer": true},
+{"question": "Αν ισχύει ότι: \\[ \\lim_{x \\to x_0} (f(x) \\cdot g(x)) = k \\] τότε \\[ \\lim\\limits_{x \\to x_0} f(x) \\cdot \\lim\\limits_{x \\to x_0} g(x) = k \\]","answer": false},
+{"question": "Αν υπάρχει το \\[ \\lim_{x \\to x_0} f(x) = \\ell \\] τότε \\[ \\lim_{x \\to x_0} \\sqrt{f(x)} = \\sqrt{ \\lim_{x \\to x_0} f(x) } \\] εφόσον \\( f(x) \\geq 0 \\) κοντά στο \\( x_0 \\)","answer": true},
+  {  "question": "Αν \\( f(x) < g(x) \\) κοντά στο \\( x_0 \\) τότε \\[ \\lim\\limits_{x \\to x_0} f(x) < \\lim\\limits_{x \\to x_0} g(x) \\]", "answer": false },
+{"question": "Ισχύει \\[ \\lim\\limits_{h \\to 0} (f(x_0 + h)) = \\ell \\iff \\lim\\limits_{x \\to x_0} f(x) = \\ell \\]","answer": true},
+  {"question": "Αν \\( f : (\\alpha, \\beta) \\to R \\) τότε \\[ \\lim\\limits_{x \\to \\alpha^{+}} f(x) = \\lim\\limits_{x \\to \\alpha} f(x) \\]","answer": true},
+  {"question": "Αν \\( f : R \\to R \\) και \\[ \\lim\\limits_{x \\to x_0} f(x) = \\ell > 0 \\] τότε \\( f(x) > 0 \\) για κάθε \\( x \\in R \\)","answer": false },
+  {"question": "Αν \\( \\lim\\limits_{x \\to x_0} |f(x)| = \\ell \\) τότε \\( \\lim\\limits_{x \\to x_0} f(x) = \\ell \\) ή \\( \\lim\\limits_{x \\to x_0} f(x) = -\\ell \\)","answer": false },
+{ "question": "Αν \\( \\lim\\limits_{x \\to -\\infty} f(x) = -\\infty \\), τότε \\( \\lim\\limits_{x \\to -\\infty} \\frac{1}{f(x)} = 0 \\)","answer": true},
+{ "question": "Πάντα ισχύει ότι: αν \\(\\lim\\limits_{x\\to x_0} f(x) =l \\) και \\( \\lim\\limits_{x \\to x_0} g(x) = m \\) τότε \\[ \\lim\\limits_{x \\to x_0} (f(x) + g(x)) =l + m \\]","answer": true},
+{question: "Ισχύει ότι : \\( \\lim\\limits_{x \\to -\\infty} \\frac{1}{x} = 0 \\).", answer:true},
+{"question": "Αν \\( \\lim\\limits_{x \\to x_0} f(x) = +\\infty \\) ή \\( \\lim\\limits_{x \\to x_0} f(x) = -\\infty \\), τότε \\[ \\lim\\limits_{x \\to x_0} |f(x)| = +\\infty \\]","answer": true},
+{question: "Έστω συνάρτηση f ορισμένη στο \\((a, x_{0}) \\cup (x_{0}, b)\\) και \\( \\ell \\) ένας πραγματικός αριθμός. Τότε ισχύει η ισοδυναμία: \\[ \\lim\\limits_{x \\to x_{0}} f(x) = \\ell \\iff \\lim\\limits_{x \\to x_{0}^{-}} f(x) = \\lim\\limits_{x \\to x_{0}^{+}} f(x) = \\ell \\].", answer: true},
+{question: "Αν \\( \\lim\\limits_{x \\to x_{0}} f(x) > 0 \\), τότε \\( f(x) > 0 \\) κοντά στο \\(x_{0}\\).", answer: true},
+{question: "Αν οι συναρτήσεις f, g έχουν όριο στο \\(x_{0}\\) και ισχύει \\( f(x) \\leq g(x) \\) κοντά στο \\(x_{0}\\), τότε \\[ \\lim\\limits_{x \\to x_{0}} f(x) \\leq \\lim\\limits_{x \\to x_{0}} g(x) \\].", answer: true},
+{question: "Αν υπάρχει το όριο \\[ \\lim\\limits_{x \\to x_{0}} (f(x) + g(x)) \\], τότε κατ' ανάγκη υπάρχουν τα όρια \\[ \\lim\\limits_{x \\to x_{0}} f(x) \\] και \\[ \\lim\\limits_{x \\to x_{0}} g(x) \\].", answer: false},
+{"question": "Αν \\( \\kappa \\) θετικός ακέραιος, τότε \\( \\lim\\limits_{x \\to 0} \\frac{1}{x^{2\\kappa + 1}} = +\\infty \\)","answer": false},
+{question: "Για κάθε συνάρτηση \\( f: A \\to \\mathbb{R} \\), όταν υπάρχει το όριο της f καθώς το \\(x\\) τείνει στο \\(x_{0} \\in A\\), τότε αυτό το όριο ισούται με την τιμή της f στο \\(x_{0}\\).", answer: false}
         ]
     },
     'Συνέχεια': {
@@ -234,6 +276,7 @@ function goHome(){
     document.getElementById('categoryMenu').style.display='none';
     document.getElementById('scoreContainer').style.display='none';
 }
+
 
 
 
