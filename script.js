@@ -88,7 +88,7 @@ const quizData = {
 
 {question: "Είναι \\(\\lim\\limits_{x \\to 0} \\left( \\frac{1}{x^2+x} \\cdot x \\right) = \\lim\\limits_{x \\to 0} x \\cdot \\lim\\limits_{x \\to 0} \\frac{1}{x^2+x} = 0 \\)", answer: false},
 
-{question: "Αν \\( f(x) > 1 \\) για κάθε \\( x \\in \\mathbb{R} \\) και υπάρχει το \\(\\lim\\limits_{x \\to 0} f(x)\\), τότε κατ’ ανάγκη \\(\\lim\\limits_{x \\to 0} f(x) > 1\\)", answer: true},
+{question: "Αν \\( f(x) > 1 \\) για κάθε \\( x \\in \\mathbb{R} \\) και υπάρχει το \\(\\lim\\limits_{x \\to 0} f(x)\\), τότε κατ’ ανάγκη \\(\\lim\\limits_{x \\to 0} f(x) > 1\\)", answer: false},
 
 {question: "Ισχύει: \\(\\lim\\limits_{x \\to +\\infty} \\big(x \\cdot ημ \\tfrac{1}{x}\\big) = 1\\)", answer: true},
 {question: "Ισχύει: \\(\\lim\\limits_{x \\to +\\infty} \\frac{ημx}{x} = 1\\)", answer: false},
@@ -392,6 +392,7 @@ function goHome(){
     document.getElementById('categoryMenu').style.display='none';
     document.getElementById('scoreContainer').style.display='none';
 }
+
 
 
 
